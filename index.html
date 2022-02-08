@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Yellowtail&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="page_header theme_element_backgroundcolor">
+        <section class="page_header_section" id="content" >
+            <p id="logo"> SunbeamCars Inc.</p>
+            
+        </section>
+
+        <section class="page_header_section" >
+            
+            <p id="log"> Log in</p>
+            <a href="#"> <img src="images/icon.png" id="myimage" height="20" alt="person icon"></a>
+        </section>
+    </header>
+
+
+      <!--FILL IN--> 
+    
+    <div class="container">
+        <img src="images/couple.jpeg" alt="Couple driving" style="width:90%;">
+        <div class="text-block">
+            <h2> Find the car that suits you!</h2>
+            <form>
+                <label for="Ipickitup" id="left">I pick it up:</label><br>
+                <input type="date" id="left"><br> <br>
+                <label for="handin" id="right">I hand it in:</label> <br>
+                <input type="date" id="right"><br><br>
+
+            </form>
+
+            <form>
+                <label for="persons" id="left2">Number of persons:</label><br>
+                <input type="number" id="left2" name="fname" value="1" min="1" max="7"><br><br>
+                <label for="suitcases" id="right2">Number of suitcases:</label><br>
+                <select Name="Name_of_list_box" id="right2" Size="1">  
+                    <option> 0 - only a bag </option>  
+                    <option> 1 suitcase </option>  
+                    <option> 2 suitcases </option>  
+                    <option> 3 suitcases </option> 
+                    <option> 4 suitcases </option>   
+                  </select> <br><br>
+                <input type="submit" id="search" value="Search">
+        
+              </form>
+            
+        </div>
+      </div>
+
+      <!--CAR  MODELS-->
+      
+      
+      
+          <div id="output"></div>
+     
+      
+
+
+      <div class="flex-container">
+        <div>
+            <img src="images/suzuki.png" class="carimg" alt="Suzuki" id="suzuki" height="300">
+        </div>
+        <div>
+            <section id="car">
+            SUZUKI SWIFT
+            </section>
+        </div>
+ 
+        <div>
+            <section class="info">
+                <p>Category: Budget <br> Persons: 4 <br>Suitcases: 1</p>
+            </section>
+        </div>  
+  
+
+        <div>
+            <h3 class="price">DKK850,00</h3>
+            <input type="submit" id="book" value="Book now">
+
+        </div>  
+      </div>
+
+      <div class="flex-container">
+        <div>
+            <img src="images/mazda.png" class="carimg" alt="Mazda" height="150">
+        </div>
+        <div>
+            <section id="car">
+            MAZDA 3
+            </div>
+        </section>
+       
+
+
+        <div>
+            <section class="info">
+
+                <p>Category: Standard <br> Persons: 5 <br>Suitcases: 3</p>
+          
+            </section>
+        </div>  
+
+        <div>
+            <h3 class="price">DKK1170,00</p>
+            <input type="submit" id="book" value="Book now">
+
+        </div>  
+      </div>
+
+      <div class="flex-container">
+        <div>
+            <img src="images/citroen.png" class="carimg" alt="Citroen" height="150">
+        </div>
+        <div>
+            <section id="car">
+            CITROEN GRAND C4 PICASSO 
+        </div>
+    </section>
+    
+        <div>
+            <section class="info">
+                <p>Category: Minivan <br> Persons: 7 <br>Suitcases: 4</p>
+        </div>  
+    </section>
+        <div>
+            <h3 class="price">DKK1420,00</p>
+            <input type="submit" id="book" value="Book now">
+
+        </div>  
+      </div>
+    
+      <script src="data.js"></script>
+      <script src="javasript.js"></script>
+      <script src="filtering.js"></script>
+
+</body>
+</html>
